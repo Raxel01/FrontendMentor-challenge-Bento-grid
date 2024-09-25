@@ -1,0 +1,13 @@
+:root {
+    --bg-body:rgb(235, 235, 235);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--bg-body);
+}

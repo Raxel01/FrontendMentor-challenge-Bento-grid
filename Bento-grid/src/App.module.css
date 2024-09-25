@@ -1,0 +1,32 @@
+
+.App{
+  width: 90rem;
+  height: 60rem;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+  height: 90%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1.5fr 3.5fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  border-radius: 1rem;
+  
+}
+/* 414 */
+@media  only screen and (max-width: 26rem){
+  .App{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3.5fr;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    gap: 0;
+    width: 26rem;
+    height: 56rem;
+    overflow: scroll;
+    gap: 2rem;
+
+  }
+}

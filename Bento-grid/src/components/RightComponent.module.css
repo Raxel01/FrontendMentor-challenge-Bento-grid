@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'DM Sans Italic';
+    src: url('../fonts/static/DMSans-MediumItalic.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/static/DMSans-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+.RightComponent{
+    display: grid;
+    width: 1fr;
+    height: 50rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.5fr repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media  only screen and (max-width: 26rem){
+    .RightComponent{
+        display: grid;
+        width: 100%;
+        height: 50rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1rem;
+    }
+    .socialMedia10X{
+        grid-area: 1 /1 / 2 /2;
+    }
+    .sheduleToSocialMedia{
+        grid-area: 2 /1/3/2;
+    }
+    .manageAccounts3 {
+        grid-area: 3/1/4/2
+    }
+    .postingShedule{
+
+        grid-area:  4 /1/5/2;
+    }
+    .audienceGrowth{
+        grid-area:  5 /1/6/2;
+    }
+}
+
+.socialMedia10X{
+    background-color: hsl(256, 67%, 59%);
+    border-radius: 0.5rem;
+    grid-area: 1 / 1 / 2 /3;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.3fr 1fr;
+    height: 313px;
+    width: 564px;
+}
+
+.teenX{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;    
+}
+.colorised10{
+    color: hsl(39, 100%, 71%);
+
+}
+.tenXtext{
+    text-align: center;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size:50px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+.fivestart{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fivestarsImg{
+    justify-self: flex-end;
+    justify-content: flex-end;
+
+}
+.fiveStarsCount{
+    color: white;
+    font-family: 'DM Sans Italic',sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.sheduleToSocialMedia{
+    background-color: hsl(254, 88%, 90%);
+    border-radius: 0.5rem;
+    grid-area:  1 / 3 / 3/ -1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 0.4fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 17rem;
+    height: 35rem;
+
+}
+
+.schedulTEXT{
+    justify-self: start;
+    font-family: 'DM Sans Italic',sans-serif;
+    font-size: 25px;
+    line-height: 0.8;
+    margin-left: 3rem;
+}
+
+.schedulepost{
+    justify-self: end;
+    margin-left: 3rem;
+}
+
+.optimizeParagraph{
+    font-weight: normal;
+    font-family: 'DM Sans Italic',sans-serif;
+    font-size: 18px;
+    margin-top: 0;
+    line-height: 1;
+    justify-content: center;
+    justify-self: start;
+    align-self: start;
+}
+
+.manageAccounts{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 2fr;
+    width: 266px;
+    height: 209px;
+}
+
+.socialMediaLinks{
+    /* background-color: black; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.socialmediaImages{
+    margin-left: 2rem;
+}
+
+.managetext{
+    display: flex;
+    align-items: center;
+}
+.holText{
+    font-family: 'DM Sans',sans-serif;
+    text-align: left;
+    font-size: 25px;
+    align-self: center;
+    margin-left: 1.8rem;
+    line-height: 1;
+}
+
+.postingShedule{
+    background-color: hsl(39, 100%, 71%);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 266px;
+    height: 209px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 4fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+}
+
+.textShedulHolder{
+    height: 100%;
+    width: 100%;
+    align-self: start;
+    text-align: left;
+}
+.textShedule{
+    font-size: 27px;
+    line-height: 0.9;
+    margin-bottom: 0;
+    font-family: 'DM Sans',sans-serif;
+    margin-left: 1.8rem;
+}
+
+.audienceGrowth{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.6fr 2fr;
+    height: 214px;
+    width: 266;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.fastergrowth{
+    font-family: 'DM Sans',sans-serif;
+    font-size: 1.1rem;
+}
+
+
+.percentage{
+    text-align: center;
+    font-family: 'DM Sans Italic',sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+
+.GrowFollowers{
+    background-color: hsl(256, 67%, 59%);
+    border-radius: 0.5rem;
+    grid-area: 3 / 2 /-1/ -1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: 0.95fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 0rem;
+    width: 561px;
+    height: 214px;
+}
+
+.avisHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.growText{
+    color: white;
+    font-family: 'DM Sans',sans-serif;
+    text-align: left;
+    font-size: 35px;
+    line-height: 0.9;
+    justify-content: start;
+    justify-self: start;
+    /* align-self: s; */
+
+}
